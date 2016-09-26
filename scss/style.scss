@@ -121,3 +121,35 @@ nav {
 		}
 	}
 }
+.three {
+	width: 70%;
+	margin: $margin;
+	text-align: center;
+	color: $font-color;
+	h2 {
+		margin: 2em;
+		color: $heading-color;
+	}
+	p {
+		margin-bottom: 2em;
+	}
+	table {
+		margin: $margin;
+		border-collapse: collapse;
+		td {
+			padding: .6em 3.5em;
+			border: 1px solid $font-color;
+		}
+		.orange {
+			background: $orange;
+			color: $white;
+		}
+		.gray {
+			background: $heading-color;
+			color: $white;
+		}
+		.none {
+			border: 0;
+		}
+	}
+}

@@ -106,4 +106,29 @@ nav {
       .two .gallery .image p {
         display: none; }
 
+.three {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: #797979; }
+  .three h2 {
+    margin: 2em;
+    color: #374249; }
+  .three p {
+    margin-bottom: 2em; }
+  .three table {
+    margin: 0 auto;
+    border-collapse: collapse; }
+    .three table td {
+      padding: .6em 3.5em;
+      border: 1px solid #797979; }
+    .three table .orange {
+      background: #f75311;
+      color: #ffffff; }
+    .three table .gray {
+      background: #374249;
+      color: #ffffff; }
+    .three table .none {
+      border: 0; }
+
 /*# sourceMappingURL=style.css.map */
