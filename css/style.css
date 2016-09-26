@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  text-transform: uppercase; }
+
+nav {
+  width: 100%;
+  background: #374249; }
+  nav .new-york {
+    width: 20%;
+    display: inline-block;
+    background: #f75311;
+    padding: .7em 2em; }
+    nav .new-york img {
+      width: 2em;
+      height: 2em;
+      vertical-align: middle; }
+    nav .new-york p {
+      display: inline-block;
+      text-decoration: underline;
+      color: #ffffff; }
+  nav ul {
+    list-style: none;
+    display: inline-block; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        display: inline-block;
+        padding: 1em 2em;
+        color: #ffffff; }
+        nav ul li a:hover {
+          text-decoration: underline; }
+
+.one {
+  width: 100%;
+  position: relative; }
+  .one img {
+    width: 100%; }
+  .one .heading {
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    width: 70%;
+    background: rgba(55, 66, 73, 0.5);
+    text-align: center;
+    color: #ffffff; }
+    .one .heading h1 {
+      font-size: 3em; }
+    .one .heading p {
+      font-size: 1.2em; }
+
+.buttons {
+  width: 70%;
+  margin: 0 auto;
+  text-align: right;
+  padding: 1em; }
+  .buttons a {
+    color: #797979;
+    padding: 1em 1.5em;
+    display: inline-block;
+    margin-left: 1em;
+    border-radius: 1.5em;
+    border: 1px solid #797979; }
+    .buttons a:hover {
+      background: #797979;
+      color: #ffffff; }
+
+.two {
+  background: #f3f7f9; }
+  .two .gallery {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em 0 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .two .gallery .image {
+      width: 20%;
+      height: 23em;
+      margin-right: 2em;
+      margin-bottom: 2em;
+      position: relative; }
+      .two .gallery .image:hover p {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 1em 2em 3em 1em;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 1.5em; }
+      .two .gallery .image img {
+        width: 100%;
+        height: 100%; }
+      .two .gallery .image p {
+        display: none; }
+
+/*# sourceMappingURL=style.css.map */

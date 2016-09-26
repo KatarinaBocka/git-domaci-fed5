@@ -1,0 +1,123 @@
+@import 'var';
+@import 'mixins';
+@import 'mixins-flex';
+
+@include main;
+
+a {
+	text-decoration: none;
+}
+h2 {
+	text-transform: uppercase;
+}
+
+nav {
+	width: 100%;
+	background: $darkblue;
+	.new-york {
+		width: 20%;
+		display: inline-block;
+		background: $orange;
+		padding: .7em 2em;
+		img {
+			width: 2em;
+			height: 2em;
+			vertical-align: middle;
+		}
+		p {
+			display: inline-block;
+			text-decoration: underline;
+			color: $white;
+		}
+	}
+	ul {
+		list-style: none;
+		display: inline-block;
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				padding: 1em 2em;
+				color: $white;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+.one {
+	width: 100%;
+	position: relative;
+	img {
+		width: 100%;
+	}
+	.heading {
+		position: absolute;
+		left: 15%;
+		bottom: 15%;
+		width: 70%;
+		background: rgba(55, 66, 73, .5);
+		text-align: center;
+		color: $white;
+		h1 {
+			font-size: 3em;
+		}
+		p {
+			font-size: 1.2em;
+		}
+	}
+}
+.buttons {
+	width: 70%;
+	margin: $margin;
+	text-align: right;
+	padding: 1em;
+	a {
+		color: $font-color;
+		padding: 1em 1.5em;
+		display: inline-block;
+		margin-left: 1em;
+		border-radius: 1.5em;
+		border: 1px solid $font-color;
+		&:hover {
+			background: $font-color;
+			color: $white;
+		}
+	}
+}
+.two {
+	background: $light-gray2;
+	.gallery {
+		width: 70%;
+		margin: $margin;
+		padding: 2em 0 0;
+		@include flexbox;
+		@include flex-wrap;
+		.image {
+			width: 20%;
+			height: 23em;
+			margin-right: 2em;
+			margin-bottom: 2em;
+			position: relative;
+			&:hover {
+				p {
+					display: inline-block;
+					position: absolute;
+					top: 0;
+					width: 100%;
+					padding: 1em 2em 3em 1em;
+					background: rgba(255, 255, 255, .6);
+					font-size: 1.5em;
+				}
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			p {
+				display: none;
+			}
+		}
+	}
+}
