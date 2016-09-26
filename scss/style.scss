@@ -9,11 +9,15 @@ a {
 }
 h2 {
 	text-transform: uppercase;
+	color: $heading-color;
 }
 
 nav {
 	width: 100%;
 	background: $darkblue;
+	position: fixed;
+	top: 0;
+	z-index: 1;
 	.new-york {
 		width: 20%;
 		display: inline-block;
@@ -48,6 +52,7 @@ nav {
 }
 .one {
 	width: 100%;
+	margin-top: 3em;
 	position: relative;
 	img {
 		width: 100%;
@@ -126,9 +131,9 @@ nav {
 	margin: $margin;
 	text-align: center;
 	color: $font-color;
+	padding: 2em 0 4em;
 	h2 {
-		margin: 2em;
-		color: $heading-color;
+		margin-bottom: 2em;
 	}
 	p {
 		margin-bottom: 2em;
@@ -151,5 +156,63 @@ nav {
 		.none {
 			border: 0;
 		}
+	}
+}
+.four {
+	background: $light-gray2;
+	text-align: center;
+	padding: 2em;
+	h2 {
+		margin-bottom: 2em;
+	}
+	.contact {
+		width: 70%;
+		margin: $margin;
+		@include flexbox;
+		@include space-between;
+		@include flex-items-start;
+		iframe {
+			width: 35%;
+		}
+		form {
+			width: 60%;
+			padding: 2em;
+			background: $orange;
+			color: $font-color;
+			@include flexbox;
+			@include flex-wrap;
+			@include flex-content-start;
+			select {
+				width: 20%;
+				margin-right: 10%;
+				padding: $form-padding;
+				margin-bottom: $form-margin;
+			}
+			input[type=name] {
+				width: 70%;
+				padding: $form-padding;
+				margin-bottom: $form-margin;
+			}
+			input[type=email] {
+				width: 100%;
+				padding: $form-padding;
+				margin-bottom: $form-margin;
+			}
+			textarea {
+				width: 100%;
+				height: 6em;
+				padding: $form-padding;
+			}
+		}
+	}
+}
+footer {
+	width: 100%;
+	background: $darkblue;
+	text-align: center;
+	line-height: 2em;
+	color: $white;
+	.text-orange {
+		color: $orange;
 	}
 }
