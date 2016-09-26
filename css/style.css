@@ -134,6 +134,8 @@ nav {
       color: #ffffff; }
     .three table .none {
       border: 0; }
+  .three a {
+    display: none; }
 
 .four {
   background: #f3f7f9;
@@ -235,15 +237,15 @@ footer {
   .two .gallery {
     width: 80%; }
     .two .gallery .image {
-      width: 47%;
-      height: 20em; }
+      width: 46%;
+      height: 18em; }
 
   .three {
     width: 80%; }
     .three p {
       font-size: .8em; }
     .three table td {
-      padding: .6em 3em;
+      padding: .5em 2.4em;
       font-size: .9em; }
 
   .four .contact {
@@ -253,6 +255,7 @@ footer {
     flex-wrap: wrap; }
     .four .contact iframe {
       width: 60%;
+      height: 18em;
       margin: 0 auto; }
     .four .contact form {
       width: 100%;
@@ -260,5 +263,89 @@ footer {
 
   footer {
     font-size: .8em; } }
+@media screen and (max-width: 600px) {
+  nav .new-york {
+    width: 100%;
+    display: block; }
+  nav ul {
+    display: block;
+    text-align: center; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        display: block; }
+
+  .one {
+    background: #000000;
+    margin-top: 9.3em; }
+    .one img {
+      display: none; }
+    .one .heading {
+      width: 90%;
+      margin: 0 auto;
+      position: static;
+      background: #000000;
+      padding: .5em 0 2em; }
+      .one .heading h1 {
+        font-size: 2em; }
+      .one .heading p {
+        font-size: .9em; }
+
+  .buttons {
+    width: 90%;
+    text-align: center; }
+    .buttons a {
+      padding: .5em .7em;
+      font-size: .7em; }
+
+  .two .gallery {
+    width: 90%; }
+    .two .gallery .image {
+      width: 100%;
+      height: 15em;
+      margin-right: 0; }
+      .two .gallery .image:hover p {
+        padding: .7em 1.8em 2.2em .7em;
+        font-size: 1em; }
+
+  .three table {
+    display: none; }
+  .three a {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+    color: #797979;
+    border: 1px solid #797979;
+    padding: .5em .8em;
+    border-radius: 1em;
+    font-size: .8em; }
+    .three a:hover {
+      background: #797979;
+      color: #ffffff; }
+
+  .four .contact {
+    width: 90%; }
+    .four .contact iframe {
+      width: 90%;
+      height: 12em; }
+    .four .contact form {
+      padding: 1em; }
+      .four .contact form select {
+        width: 100%;
+        margin-right: 0;
+        padding: 0.5em;
+        margin-bottom: 1em; }
+      .four .contact form input[type=name] {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em; }
+      .four .contact form input[type=email] {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em; }
+      .four .contact form textarea {
+        width: 100%;
+        height: 6em;
+        padding: 1em; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -156,6 +156,9 @@ nav {
 			border: 0;
 		}
 	}
+	a {
+		display: none;
+	}
 }
 .four {
 	background: $light-gray2;
@@ -268,8 +271,8 @@ footer {
 		.gallery {
 			width: 80%;
 			.image {
-				width: 47%;
-				height: 20em;
+				width: 46%;
+				height: 18em;
 			}
 		}
 	}
@@ -280,7 +283,7 @@ footer {
 		width: 80%;
 		table {
 			td {
-				padding: .6em 3em;
+				padding: .5em 2.4em;
 				font-size: .9em;
 			}
 		}
@@ -291,6 +294,7 @@ footer {
 			@include flex-wrap;
 			iframe {
 				width: 60%;
+				height: 18em;
 				margin: $margin;
 			}
 			form {
@@ -301,5 +305,119 @@ footer {
 	}
 	footer {
 		font-size: .8em;
+	}
+}
+@include mobile {
+	nav {
+		.new-york {
+			width: 100%;
+			display: block;
+		}
+		ul {
+			display: block;
+			text-align: center;
+			li {
+				display: block;
+				a {
+					display: block;
+				}
+			}
+		}
+	}
+	.one {
+		background: #000000;
+		margin-top: 9.3em;
+		img {
+			display: none;
+		}
+		.heading {
+			width: 90%;
+			margin: $margin;
+			position: static;
+			background: #000000;
+			padding: .5em 0 2em;
+			h1 {
+				font-size: 2em;
+			}
+			p {
+				font-size: .9em;
+			}
+		}
+	}
+	.buttons {
+		width: 90%;
+		text-align: center;
+		a {
+			padding: .5em .7em;
+			font-size: .7em;
+		}
+	}
+	.two {
+		.gallery {
+			width: 90%;
+			.image {
+				width: 100%;
+				height: 15em;
+				margin-right: 0;
+				&:hover {
+					p {
+						padding: .7em 1.8em 2.2em .7em;
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+	.three {
+		table {
+			display: none;
+		}
+		a {
+			display: block;
+			margin: $margin;
+			width: 45%;
+			color: $font-color;
+			border: 1px solid $font-color;
+			padding: .5em .8em;
+			border-radius: 1em;
+			font-size: .8em;
+			&:hover {
+				background: $font-color;
+				color: $white;
+			}
+		}
+	}
+	.four {
+		.contact {
+			width: 90%;
+			iframe {
+				width: 90%;
+				height: 12em;
+			}
+			form {
+				padding: 1em;
+				select {
+					width: 100%;
+					margin-right: 0;
+					padding: $form-pad-mob;
+					margin-bottom: $form-mar-mob;
+				}
+				input[type=name] {
+					width: 100%;
+					padding: $form-pad-mob;
+					margin-bottom: $form-mar-mob;
+				}
+				input[type=email] {
+					width: 100%;
+					padding: $form-pad-mob;
+					margin-bottom: $form-mar-mob;
+				}
+				textarea {
+					width: 100%;
+					height: 6em;
+					padding: $form-mar-mob;
+				}
+			}
+		}
 	}
 }
