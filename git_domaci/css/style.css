@@ -1,0 +1,235 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 200;
+  color: #374249; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.btn-group {
+  margin: 1.3em 0em 3em 0em;
+  text-align: right; }
+  .btn-group a {
+    font-size: 0.8em;
+    display: inline-block;
+    line-height: 3em;
+    border: 1px solid #374249;
+    border-radius: 1.5em;
+    padding: 0px 1.2em;
+    color: #374249;
+    margin-left: 1.3em; }
+
+nav {
+  background-color: #374249; }
+  nav li {
+    display: inline-block;
+    background-color: #374249; }
+    nav li.location {
+      background-color: #f75311;
+      padding-right: 5em;
+      padding-left: 0em; }
+      nav li.location img {
+        width: 30px;
+        float: left;
+        padding-top: 0.4em; }
+      nav li.location a {
+        padding-left: 1em;
+        text-decoration: underline; }
+    nav li a {
+      display: block;
+      font-weight: 100;
+      font-size: 0.8em;
+      color: white;
+      line-height: 3em;
+      padding: 0em 2em; }
+
+.slider {
+  position: relative; }
+  .slider img {
+    width: 100%;
+    height: auto; }
+  .slider .transparent {
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white; }
+  .slider div {
+    width: 65%; }
+  .slider h1, .slider p {
+    color: white;
+    text-align: center; }
+
+main {
+  margin: 0 auto;
+  padding: 0px 15%; }
+
+.apartment {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+  position: relative; }
+  .apartment img {
+    width: 100%;
+    height: auto; }
+  .apartment div {
+    display: none;
+    padding: 0.5em;
+    position: absolute;
+    top: 0px;
+    height: 6em;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.5); }
+  .apartment h3, .apartment p {
+    color: black; }
+  .apartment:hover div {
+    display: block; }
+
+.headings-center {
+  margin-top: 2em; }
+  .headings-center h2, .headings-center p {
+    text-align: center; }
+  .headings-center h2 {
+    margin-bottom: 1.5em; }
+
+table {
+  border-spacing: 0;
+  line-height: 1.5em;
+  margin: 3em auto;
+  width: 80%;
+  text-align: center; }
+  table th {
+    color: white;
+    background-color: #f75311; }
+  table .highlight {
+    color: white;
+    background-color: #374249; }
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3em; }
+
+.map {
+  width: 32.5%;
+  height: 200px;
+  float: left; }
+
+form {
+  background-color: #f75311;
+  float: right;
+  width: 62.5%;
+  padding: 0.5em; }
+  form select {
+    height: 2em;
+    width: 20%;
+    line-height: 2em; }
+  form input, form textarea {
+    width: 100%;
+    line-height: 2em; }
+  form input:first-child {
+    width: 20%; }
+  form .small-input {
+    width: 78%;
+    float: right; }
+  form input[type="email"] {
+    margin: 0.7em 0em; }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #374249;
+  line-height: 1.5em;
+  color: white; }
+  footer span {
+    color: #f75311; }
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    width: 100%; }
+
+  .apartment {
+    width: 50%;
+    height: 200px;
+    margin-bottom: 1em; }
+
+  .map {
+    width: 60%;
+    margin: 0 auto;
+    float: none; }
+
+  form {
+    margin-top: 2em;
+    width: 100%; }
+
+  ul li.location {
+    padding-right: 1em; } }
+@media screen and (max-width: 530px) {
+  table {
+    display: none; }
+
+  nav .location {
+    width: 100%;
+    text-align: left; }
+  nav li {
+    display: block;
+    text-align: center; }
+    nav li a {
+      font-size: 1em; }
+
+  .slider img {
+    display: none; }
+  .slider .transparent {
+    width: 100%;
+    transform: translate(0%, 0%);
+    position: static;
+    background-color: black;
+    padding-bottom: 1em; }
+    .slider .transparent h1 {
+      font-size: 2.8em; }
+
+  main {
+    padding: 0px 3%; }
+
+  .btn-group {
+    text-align: center; }
+    .btn-group .a {
+      font-size: 0.9em;
+      margin: 0px;
+      padding: 0px 0em; }
+
+  .apartment {
+    width: 100%; }
+    .apartment div {
+      display: block; }
+
+  form select {
+    height: 2em;
+    width: 100%;
+    margin-bottom: 0.6em; }
+  form input:first-child {
+    width: 100%; }
+  form .small-input {
+    width: 100%;
+    float: none; } }
+
+/*# sourceMappingURL=style.css.map */

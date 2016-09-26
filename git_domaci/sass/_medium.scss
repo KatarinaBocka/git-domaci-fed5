@@ -1,0 +1,22 @@
+@media screen and (max-width:$tablet) {
+    .contact {
+        width: 100%;
+    }
+    .apartment {
+        width: 50%;
+        height: 200px;
+        margin-bottom: 1em;
+    }
+    .map {
+        width: 60%;
+        margin: 0 auto;
+        float: none;
+    }
+    form {
+        margin-top: 2em;
+        width: 100%;
+    }
+    ul  li.location {
+        padding-right: 1em;
+    }
+}

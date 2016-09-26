@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: $font;
+    font-weight: 200;
+    color: $color-second;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

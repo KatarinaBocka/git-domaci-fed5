@@ -1,0 +1,71 @@
+@media screen and (max-width:$mobile) {
+    
+    table {
+        display: none;
+    }
+    nav {
+        .location {
+            width: 100%;
+            text-align: left;
+        }
+        li {
+            display: block;
+            text-align: center;
+            a {
+                font-size: 1em;
+            }
+        }
+        
+    }
+    
+    .slider {
+        img {
+            display: none;
+        }
+        .transparent {
+            width: 100%;
+            transform: translate(0%, 0%);
+            position: static;
+            background-color: black;
+            padding-bottom: 1em;
+            h1 {
+                font-size: 2.8em;
+            }
+        }
+    }
+    
+
+    main {
+        padding: 0px 3%;
+    }
+    .btn-group {
+        text-align: center;
+        .a {
+            font-size: 0.9em;
+            margin: 0px;
+            padding: 0px 0em;
+        }
+     }
+    .apartment {
+        width: 100%;
+        div {
+            display: block;
+        }
+    }
+    
+    form {
+        select {
+     
+            height: 2em;
+            width: 100%;
+           margin-bottom: 0.6em;
+        }
+        input:first-child {
+            width: 100%;
+        }
+        .small-input {
+            width: 100%;
+            float: none;
+        }
+    }
+}
